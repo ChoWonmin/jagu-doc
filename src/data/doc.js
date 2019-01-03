@@ -340,7 +340,8 @@ const doc = {
       ],
       funcs: [
         'push(element)', 'pop()'
-      ]
+      ],
+      code: ''
     }
   },
   trie: {

@@ -21,8 +21,9 @@
           .title Function
           .func(v-for="func in content.visualization.funcs")
             .name {{func}}
-
-        //router-view
+          .title example
+          .example
+            router-view
       .content(v-else)
         .notice to be continue ...
   </div>
@@ -48,7 +49,7 @@ export default {
   methods: {
     search(item) {
       this.content = doc[item];
-      console.log(item, doc[item])
+      this.$router.push(`${item}Vis`);
     }
   },
 }
@@ -97,6 +98,11 @@ body
         font-size: 26px
         margin-top: 32px
         font-weight: bold
+
+      .example
+        margin-top: 18px
+        width: 100%
+        @include shadow(.12)
 
       .notice
         font-size: 48px
