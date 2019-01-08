@@ -242,7 +242,17 @@ const doc = {
         description: 'clears the queue',
       },
     ],
-    visualization: undefined
+    visualization: {
+      usage: 'const queueVis = jagu.vis(string, queue).queue()',
+      arguments: [
+        '{String} [renderer] html svg tag',
+        '{Object} [datastructure] jagu datastructure'
+      ],
+      funcs: [
+        'enqueue(element)', 'dequeue()', 'draw()', 'clear'
+      ],
+      code: ''
+    }
   },
   set: {
     title: 'set',
@@ -339,7 +349,7 @@ const doc = {
         '{Object} [datastructure] jagu datastructure'
       ],
       funcs: [
-        'push(element)', 'pop()'
+        'push(element)', 'pop()', 'draw()', 'clear'
       ],
       code: ''
     }

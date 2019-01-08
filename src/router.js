@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import StackVis from './views/StackVis.';
+import StackVis from './views/StackVis';
+import QueueVis from './views/QueueVis';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -17,6 +18,11 @@ export default new Router({
       path: '/stackVis',
       name: 'stackVis',
       component: StackVis
+    },
+    {
+      path: '/queueVis',
+      name: 'queueVis',
+      component: QueueVis
     }
   ]
 })

@@ -74,6 +74,6 @@ export default {
     text-indent: 8px
 
   .wrapper
-    display: flex;
+    display: flex
 
 </style>
