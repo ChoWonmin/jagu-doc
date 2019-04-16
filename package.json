@@ -5,10 +5,11 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "git-deploy": "vue-cli-service build --dest docs"
   },
   "dependencies": {
-    "jagu": "^1.1.1",
+    "jagu": "^1.1.5",
     "vue": "^2.5.21",
     "vue-router": "^3.0.1"
   },
