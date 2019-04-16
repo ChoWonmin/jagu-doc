@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "git-deploy": "vue-cli-service build --dest docs"
+    "git-deploy": "mv dist docs"
   },
   "dependencies": {
     "jagu": "^1.1.5",
